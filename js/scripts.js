@@ -4,8 +4,24 @@ $(document).ready(function(){
         speed: 1000,
         arrows: true
     });
+
 });
 
-$('[data-fancybox="gallery"]').fancybox({
-	// Options will go here
+$(document).ready(function () {
+
+    var mySwiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+        speed: 1000
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        }
+      })
 });
