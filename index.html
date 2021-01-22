@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boostfolia</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -113,7 +113,7 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     </p>
-                    <button href="#" class="btn">play now</button>
+                    <button class="btn">play now</button>
                 </div>
             </div>
             <div class="section__part section__part--video">
@@ -164,7 +164,7 @@
                         <div class="profile">
                             <div class="profile__part profile__part--sm" >
                                 <div class="profile__img">
-                                    <img src="img/Jane Smith.jpg" alt="Jane Smith">
+                                    <img src="img/Jane_Smith.jpg" alt="Jane Smith">
                                 </div>
                                 <div class="profile__name">Jane Smith</div>
                                 <div class="profile__position">Designer</div>
@@ -225,7 +225,7 @@
                         <div class="profile">
                         <div class="profile__part profile__part--sm" >
                             <div class="profile__img">
-                                <img src="img/Jonatan Micklz.jpg" alt="Jonatan Micklz">
+                                <img src="img/Jonatan_Micklz.jpg" alt="Jonatan Micklz">
                             </div>
                             <div class="profile__name">Jonatan Micklz</div>
                             <div class="profile__position">Fron-End Developer</div>
@@ -286,7 +286,7 @@
                         <div class="profile">
                             <div class="profile__part profile__part--sm" >
                                 <div class="profile__img">
-                                    <img src="img/Artur Doil.jpg" alt="Artur Doil">
+                                    <img src="img/Artur_Doil.jpg" alt="Artur Doil">
                                 </div>
                                 <div class="profile__name">Artur Doil</div>
                                 <div class="profile__position">Back-End Developer</div>
@@ -554,7 +554,18 @@
     </section>
 </main>
 <footer class="footer section--dark">
-    <div id="location" class="footer__location">Locate on map <span>V</span></div>
+    <div class="btn-wrap">
+        <button id="modal-btn" class="modal-btn  footer__location"><b>Locate on map</b> <span>V</span></button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <div class="modal__content">
+                <button id="modal-close" class="modal__close">Х</button>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
     <div class="footer__content">
         <a class="footer__link"    href="#">
             <img src="img/Logo.png" alt="Logo">
@@ -679,6 +690,9 @@
 <script src="js/libs/slick.min.js"></script>
 <script src="js/libs/swiper.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/modal.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAensHzEZts0QxkJoVoUKiF4aWPJYRfW0&callback=initMap" defer></script>
+<script src="js/maps-styles.js"></script>
 </body>
 
 </html>
