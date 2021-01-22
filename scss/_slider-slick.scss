@@ -34,6 +34,16 @@
         transform: scale(1.5);
     }
 }
+@media screen and (max-width: 992px) {
+    .slider {
+        .slick-prev {
+            left: 2%;
+        }
+        .slick-next {
+            right: 2%;
+        }
+    }
+}
 @media screen and (max-width: 576px) {
     .slider {
         .slick-arrow {
