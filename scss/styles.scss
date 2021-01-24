@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'slider-slick';
 @import 'slick';
+@import 'animate';
 @import 'swiper.min.scss';
 
 
@@ -23,6 +24,8 @@ body {
     font: 300 1.4rem/1.6 $text-ff;
     color: $dark-color;
     background-color: #ffffff;
+    overflow-x: hidden;
+
 }
 
 .container {
@@ -99,6 +102,10 @@ body {
             font-size: 4.8rem;
             margin: 20px 0;
         }
+    }
+    &__link:hover {
+        text-decoration: underline;
+        color: $fill;
     }
     &__title {
         font-weight: 700;
@@ -507,6 +514,9 @@ body {
 #tariffs {
     text-align: center;
     padding: 50px 0;
+    .body__item--lg {
+        border: 1px solid transparent;
+    }
     .up {
         background-color: #000000;
         padding: 30px 60px;
@@ -595,6 +605,7 @@ body {
     height: 15px;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets {
+    position: absolute;
     bottom: 50px;
     left: -325px;
 }
@@ -786,6 +797,15 @@ body {
         } 
     
     }
+    #our-works {
+        .gallery {
+            padding: 15px;
+        }
+        .gallery__col {
+            width: calc(100% / 3);
+
+        }
+    }
     .profile {
         flex-wrap: wrap;
         justify-content: center;
@@ -808,6 +828,11 @@ body {
             }
         }
     }  
+    #features {
+        .body__item--lg {
+            width: calc(100% / 3);
+        }
+    }
     .swiper-container-horizontal>.swiper-pagination-bullets {
         bottom: 373px;
         left: 0px;
@@ -822,7 +847,10 @@ body {
         }
         
     }
-    
+    #map {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -832,5 +860,9 @@ body {
     .swiper-container-horizontal>.swiper-pagination-bullets {
         top: 241px;
         left: 0px;
+    }
+    #map {
+        width: 250px;
+        height: 250px;
     }
 }
