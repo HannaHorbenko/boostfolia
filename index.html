@@ -45,33 +45,41 @@
 
     <main>
         <section class="hero">
-            <div class="slider">
-                <div class="slider__slide">
-                    <div class="carousel">
-                        <div class="carousel__content">
-                            <h1 class="carousel__title">WE THINK CREATIVE BE CREATIVE</h1>
-                            <p class="carousel__suptitle">LIKE TO DO CREATIVE WORKS</p>
+            <div class="swiper-container hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img class="slide__img" src="img/hero1.jpg" alt="San Francisco">
+                            <div class="slide__content">
+                                <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
+                                <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img class="slide__img" src="img/hero2.jpg" alt="Paris">
+                            <div class="slide__content">
+                                <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
+                                <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img class="slide__img" src="img/hero3.jpg" alt="London">
+                            <div class="slide__content">
+                                <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
+                                <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider__slide">
-                    <div class="carousel carousel--second">
-                        <div class="carousel__content">
-                            <h1 class="carousel__title">WE THINK CREATIVE BE CREATIVE</h1>
-                            <p class="carousel__suptitle">LIKE TO DO CREATIVE WORKS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__slide">
-                    <div class="carousel carousel--third">
-                        <div class="carousel__content">
-                            <h1 class="carousel__title">WE THINK CREATIVE BE CREATIVE</h1>
-                            <p class="carousel__suptitle">LIKE TO DO CREATIVE WORKS</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
+
         <section id="about-us" class="section">
             <div class="container">
                 <div class="head">
@@ -112,6 +120,7 @@
                 </div>
             </div>
         </section>
+
         <section id="video" class="section section--dark">
             <div class="video-wrap">
                 <div class="section__part section__part--text">
@@ -131,6 +140,7 @@
                 </div>
             </div>
         </section>
+
         <section id="our-works" class="section">
             <div class="container">
                 <div class="head">
@@ -159,6 +169,7 @@
                 <div class="gallery__col"><img src="img/gallery15.jpg" alt="content image"></div>
             </div>
         </section>
+
         <section id="our-team" class="section">
             <div class="container">
                 <div class="head">
@@ -168,7 +179,7 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
-                <div class="swiper-container">
+                <!-- <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="profile">
@@ -195,6 +206,8 @@
                                             </svg>
                                         </a>
                                     </div>
+                                    
+                                    <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
                                     <h3 class="profile__title">My skills</h3>
@@ -262,6 +275,8 @@
                                             </svg>
                                         </a>
                                     </div>
+                                    
+                                    <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
                                     <h3 class="profile__title">My skills</h3>
@@ -329,6 +344,8 @@
                                             </svg>
                                         </a>
                                     </div>
+                                    
+                                    <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
                                     <h3 class="profile__title">My skills</h3>
@@ -372,13 +389,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <! - Если нужен пейджер-> -->
-                    <div class="swiper-pagination"></div>
 
-                </div>
+
+                </div> -->
 
             </div>
         </section>
+
         <section id="features" class="section section--sm section--dark">
             <div class="container">
                 <div class="head">
@@ -426,6 +443,7 @@
                 </div>
             </div>
         </section>
+
         <section id="blog" class="section">
             <div class="container">
                 <div class="head">
@@ -500,6 +518,7 @@
                 </div>
             </div>
         </section>
+
         <section id="tariffs" class="section section--dark">
             <div class="container">
                 <div class="head">
@@ -563,6 +582,7 @@
                 </div>
             </div>
         </section>
+
         <section id="feedback" class="section">
             <div class="container">
                 <div class="head">
@@ -590,10 +610,12 @@
             </div>
         </section>
     </main>
+
     <footer class="footer section--dark">
         <div class="btn-wrap">
-            <button id="modal-btn" class="modal-btn  footer__location animate" data-animate="rubberBand"
-                data-speed="slow"><b>Locate on map</b> <span>V</span></button>
+            <button id="modal-btn" class="modal-btn  footer__location animate" data-animate="rubberBand">
+                <b>Locate on map</b> <span>V</span>
+            </button>
         </div>
 
         <div id="modal" class="modal">
@@ -742,8 +764,8 @@
     <script src="js/libs/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/libs/nav.js"></script>
-    <script src="js/libs/slick.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/modal.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAensHzEZts0QxkJoVoUKiF4aWPJYRfW0&callback=initMap"
