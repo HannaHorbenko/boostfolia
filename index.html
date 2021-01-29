@@ -33,7 +33,7 @@
                         <li class="header__item"><a role="menuitem" href="#blog">Blog posts</a></li>
                         <li class="header__item"><a role="menuitem" href="#tariffs">Chose plan</a></li>
                         <li class="header__item"><a role="menuitem" href="#feedback">Get in touch</a></li>
-                        <li class="header__item"><a role="menuitem" href="#location">Locate on map</a></li>
+                        <li class="header__item"><a role="menuitem" href="#modal-btn">Locate on map</a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,7 +99,7 @@
                         <h3 class="body__title">CREATIVE DESIGN</h3>
                         <p class="body__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</p>
                     </div>
-                    <div class="body__item animate" data-speed="fast">
+                    <div class="body__item animate" data-speed="faster">
                         <div class="svg-wrap">
                             <svg class="" width="74" height="74">
                                 <use xlink:href="#briefcase" />
@@ -179,7 +179,7 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
-                <!-- <div class="swiper-container">
+                <div class="portfolio-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="profile">
@@ -206,7 +206,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    
+
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
@@ -275,7 +275,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    
+
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
@@ -344,7 +344,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    
+
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <div class="profile__part profile__part--lg">
@@ -388,10 +388,79 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="profile">
+                                <div class="profile__part profile__part--sm">
+                                    <div class="profile__img">
+                                        <img src="img/Jane_Smith.jpg" alt="Jane Smith">
+                                    </div>
+                                    <div class="profile__name">Jane Smith</div>
+                                    <div class="profile__position">Designer</div>
+                                    <div class="socials">
+                                        <a href="#" target="_blank" class="svg-wrap">
+                                            <svg class="" width="20" height="20">
+                                                <use xlink:href="#facebook" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" target="_blank" class="svg-wrap">
+                                            <svg class="" width="20" height="20">
+                                                <use xlink:href="#twitter" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" target="_blank" class="svg-wrap">
+                                            <svg class="" width="20" height="20">
+                                                <use xlink:href="#instagram" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="profile__part profile__part--lg">
+                                    <h3 class="profile__title">My skills</h3>
+                                    <p class="profile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit,
+                                        sed do eiusmod tempor.</p>
+                                    <div class="profile__skills">
+                                        <div class="skills">
+                                            <div class="skills__name">PHOTOSHOP</div>
+                                            <div class="skills__progress"><span class="skills__progress--red"
+                                                    style="width: 83%;"></span></div>
+                                            <div class="skills__procent">83%</div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__skills">
+                                        <div class="skills">
+                                            <div class="skills__name">ILLUSTRATOR</div>
+                                            <div class="skills__progress"><span class="skills__progress--red"
+                                                    style="width: 92%;"></span></div>
+                                            <div class="skills__procent">92%</div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__skills">
+                                        <div class="skills">
+                                            <div class="skills__name">Sketch</div>
+                                            <div class="skills__progress"><span class="skills__progress--red"
+                                                    style="width: 93%;"></span></div>
+                                            <div class="skills__procent">93%</div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__skills">
+                                        <div class="skills">
+                                            <div class="skills__name">AFTER EFFECTS</div>
+                                            <div class="skills__progress"><span class="skills__progress--red"
+                                                    style="width: 98%;"></span></div>
+                                            <div class="skills__procent">98%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
-                </div> -->
+                </div>
 
             </div>
         </section>
@@ -474,7 +543,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="body__item animate" data-animate="flipInX" data-speed="fast">
+                    <div class="body__item animate" data-animate="flipInX" data-speed="faster">
                         <div class="body__img">
                             <img src="img/blog2.jpg" alt="Photo blog">
                         </div>
@@ -619,13 +688,10 @@
         </div>
 
         <div id="modal" class="modal">
-            <div class="modal__body">
-                <div class="modal__content">
-                    <button id="modal-close" class="modal__close">Х</button>
-                    <div id="map"></div>
-                </div>
-            </div>
+            <button id="modal-close" class="modal__close">Х</button>
+            <div id="map"></div>
         </div>
+
         <div class="footer__content">
             <a class="footer__link" href="#">
                 <img src="img/Logo.png" alt="Logo">
@@ -762,15 +828,15 @@
     </svg>
 
     <script src="js/libs/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/libs/nav.js"></script>
     <script src="js/libs/swiper.min.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/modal.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAensHzEZts0QxkJoVoUKiF4aWPJYRfW0&callback=initMap"
         defer></script>
     <script src="js/maps-styles.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
