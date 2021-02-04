@@ -246,7 +246,7 @@ body {
 
 .portfolio-slider .swiper-button-prev::after,
 .portfolio-slider .swiper-button-next::after {
-    color: $title-color;
+    color: $fill;
     font-size: 4.2rem;
     font-weight: 700;
 }
@@ -256,7 +256,7 @@ body {
     margin: 10px;
 }
 .portfolio-slider .swiper-pagination-bullet {
-    background-color: $title-color;
+    background-color: $fill;
 }
 
 .profile {
@@ -612,7 +612,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-    
+    html {
+        font-size: 9px;
+    }
     .body {
         flex-wrap: wrap;
         justify-content: center;
@@ -626,6 +628,7 @@ body {
         }
     }
     .slide{
+        height: 300px;
         &__title {
             font-size: 5.6rem;
         }

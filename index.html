@@ -49,7 +49,11 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slide">
-                            <img class="slide__img" src="img/hero1.jpg" alt="San Francisco">
+                            <img srcset="img/hero1-1366w.jpg 1366w,
+                                        img/hero1-576w.jpg 576w" sizes="(max-width: 576px) 576px,
+                                                (min-width: 576px) 1366px" src="img/hero1-1366w.jpg"
+                                alt="San Francisco">
+                            <!-- <img class="slide__img" src="img/hero1.jpg" alt="San Francisco"> -->
                             <div class="slide__content">
                                 <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
                                 <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
@@ -58,7 +62,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="slide">
-                            <img class="slide__img" src="img/hero2.jpg" alt="Paris">
+                            <img srcset="img/hero2-2560w.jpg 2560w,
+                                img/hero2-576w.jpg 576w" sizes="(max-width: 576px) 576px,
+                                    (min-width: 576px) 2560px" src="img/hero2-2560w.jpg" alt="London">
+                            <!-- <img class="slide__img" src="img/hero2.jpg" alt="Paris"> -->
                             <div class="slide__content">
                                 <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
                                 <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
@@ -67,7 +74,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="slide">
-                            <img class="slide__img" src="img/hero3.jpg" alt="London">
+                            <img srcset="img/hero3-1280w.jpg 1280w,
+                                        img/hero3-576w.jpg 576w" sizes="(max-width: 576px) 576px,
+                                                (min-width: 576px) 1280px" src="img/hero3-1280w.jpg" alt="Paris">
+                            <!-- <img class="slide__img" src="img/hero3.jpg" alt="London"> -->
                             <div class="slide__content">
                                 <h1 class="slide__title">WE THINK CREATIVE BE CREATIVE</h1>
                                 <p class="slide__suptitle">LIKE TO DO CREATIVE WORKS</p>
@@ -121,6 +131,61 @@
             </div>
         </section>
 
+        <section id="our-works" class="section">
+            <div class="container">
+                <div class="head">
+                    <h2 class="head__title">OUR WORKS</h2>
+                    <span class="head__line"></span>
+                    <p class="head__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="swiper-container portfolio-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery3.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery4.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery10.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery11.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery12.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery13.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery3.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery4.jpg" alt="Gallary content image"
+                                    class="portfolio__img"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio"><img src="img/gallery10.jpg" alt="" class="portfolio__img"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </section>
+
         <section id="video" class="section section--dark">
             <div class="video-wrap">
                 <div class="section__part section__part--text">
@@ -137,61 +202,6 @@
                 </div>
                 <div class="section__part section__part--video">
                     <img src="img/video1.jpg" alt="Video title">
-                </div>
-            </div>
-        </section>
-
-        <section id="our-works" class="section">
-            <div class="container">
-                <div class="head">
-                    <h2 class="head__title">OUR WORKS</h2>
-                    <span class="head__line"></span>
-                    <p class="head__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <div class="swiper-container portfolio-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery1.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery2.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery3.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery4.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery5.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery6.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery7.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery8.jpg" alt="Gallary content image"
-                                    class="portfolio__img"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio"><img src="img/gallery9.jpg" alt="" class="portfolio__img"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
-
                 </div>
             </div>
         </section>
