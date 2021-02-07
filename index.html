@@ -11,7 +11,7 @@
     <meta property="og:description" content="Boostfolia. We like to do creative works. We think creative be creative.">
     <meta property="og:image" content="Logo.png" />
     <title>Boostfolia. We like to do creative works.</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -21,25 +21,21 @@
         <div class="container">
             <div class="header__body">
                 <a href="#" class="header__logo"><img src="img/Logo.png" alt="Logo">BOOSTFOLIA</a>
-                <div class="navBurger" role="navigation" id="navToggle"></div>
+                <div class="burger"><span></span></div>
             </div>
-            <div class="overlay">
-                <nav class="overlayMenu">
-                    <ul role="menu">
-                        <li class="header__item"><a role="menuitem" href="#hero">X</a></li>
-                        <li class="header__item"><a role="menuitem" href="#about-us">About us</a></li>
-                        <li class="header__item"><a role="menuitem" href="#our-works">Our works</a></li>
-                        <li class="header__item"><a role="menuitem" href="#our-team">Our team</a></li>
-                        <li class="header__item"><a role="menuitem" href="#blog">Blog posts</a></li>
-                        <li class="header__item"><a role="menuitem" href="#tariffs">Chose plan</a></li>
-                        <li class="header__item"><a role="menuitem" href="#feedback">Get in touch</a></li>
-                        <li class="header__item"><a role="menuitem" href="#modal-btn">Locate on map</a></li>
+            <div class="menu">
+                <nav class="overlay-menu">
+                    <ul class="overlay-menu__list">
+                        <li class="overlay-menu__item"><a href="#about-us">About us</a></li>
+                        <li class="overlay-menu__item"><a href="#our-works">Our works</a></li>
+                        <li class="overlay-menu__item"><a href="#our-team">Our team</a></li>
+                        <li class="overlay-menu__item"><a href="#blog">Blog posts</a></li>
+                        <li class="overlay-menu__item"><a href="#tariffs">Chose plan</a></li>
+                        <li class="overlay-menu__item"><a href="#feedback">Get in touch</a></li>
+                        <li class="overlay-menu__item"><a href="#modal-btn">Locate on map</a></li>
                     </ul>
                 </nav>
             </div>
-
-
-
         </div>
     </header>
 
@@ -253,33 +249,33 @@
                                         sed do eiusmod tempor.</p>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">PHOTOSHOP</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 83%;"></span></div>
+                                            <label class="skills__name" for="PHOTOSHOP">PHOTOSHOP</label>
+                                            <progress id="PHOTOSHOP" class="skills__progress" max="100"
+                                                value="83"></progress>
                                             <div class="skills__procent">83%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">ILLUSTRATOR</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 92%;"></span></div>
+                                            <label class="skills__name" for="ILLUSTRATOR">ILLUSTRATOR</label>
+                                            <progress id="ILLUSTRATOR" class="skills__progress" max="100"
+                                                value="92"></progress>
                                             <div class="skills__procent">92%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">Sketch</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 93%;"></span></div>
+                                            <label class="skills__name" for="Sketch">Sketch</label>
+                                            <progress id="Sketch" class="skills__progress" max="100"
+                                                value="93"></progress>
                                             <div class="skills__procent">93%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">AFTER EFFECTS</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 98%;"></span></div>
+                                            <label class="skills__name" for="AFTER_EFFECTS">AFTER EFFECTS</label>
+                                            <progress id="AFTER_EFFECTS" class="skills__progress" max="100"
+                                                value="98"></progress>
                                             <div class="skills__procent">98%</div>
                                         </div>
                                     </div>
@@ -322,33 +318,33 @@
                                         sed do eiusmod tempor.</p>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">PHOTOSHOP</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 89%;"></span></div>
-                                            <div class="skills__procent">89%</div>
+                                            <label class="skills__name" for="PHOTOSHOP">PHOTOSHOP</label>
+                                            <progress id="PHOTOSHOP" class="skills__progress" max="100"
+                                                value="83"></progress>
+                                            <div class="skills__procent">83%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">ILLUSTRATOR</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 84%;"></span></div>
-                                            <div class="skills__procent">84%</div>
+                                            <label class="skills__name" for="ILLUSTRATOR">ILLUSTRATOR</label>
+                                            <progress id="ILLUSTRATOR" class="skills__progress" max="100"
+                                                value="92"></progress>
+                                            <div class="skills__procent">92%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">Sketch</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 97%;"></span></div>
-                                            <div class="skills__procent">97%</div>
+                                            <label class="skills__name" for="Sketch">Sketch</label>
+                                            <progress id="Sketch" class="skills__progress" max="100"
+                                                value="93"></progress>
+                                            <div class="skills__procent">93%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">AFTER EFFECTS</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 98%;"></span></div>
+                                            <label class="skills__name" for="AFTER_EFFECTS">AFTER EFFECTS</label>
+                                            <progress id="AFTER_EFFECTS" class="skills__progress" max="100"
+                                                value="98"></progress>
                                             <div class="skills__procent">98%</div>
                                         </div>
                                     </div>
@@ -391,33 +387,33 @@
                                         sed do eiusmod tempor.</p>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">PHOTOSHOP</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 89%;"></span></div>
-                                            <div class="skills__procent">89%</div>
+                                            <label class="skills__name" for="PHOTOSHOP">PHOTOSHOP</label>
+                                            <progress id="PHOTOSHOP" class="skills__progress" max="100"
+                                                value="83"></progress>
+                                            <div class="skills__procent">83%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">ILLUSTRATOR</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 84%;"></span></div>
-                                            <div class="skills__procent">84%</div>
+                                            <label class="skills__name" for="ILLUSTRATOR">ILLUSTRATOR</label>
+                                            <progress id="ILLUSTRATOR" class="skills__progress" max="100"
+                                                value="92"></progress>
+                                            <div class="skills__procent">92%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">Sketch</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 97%;"></span></div>
-                                            <div class="skills__procent">97%</div>
+                                            <label class="skills__name" for="Sketch">Sketch</label>
+                                            <progress id="Sketch" class="skills__progress" max="100"
+                                                value="93"></progress>
+                                            <div class="skills__procent">93%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">AFTER EFFECTS</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 98%;"></span></div>
+                                            <label class="skills__name" for="AFTER_EFFECTS">AFTER EFFECTS</label>
+                                            <progress id="AFTER_EFFECTS" class="skills__progress" max="100"
+                                                value="98"></progress>
                                             <div class="skills__procent">98%</div>
                                         </div>
                                     </div>
@@ -460,33 +456,33 @@
                                         sed do eiusmod tempor.</p>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">PHOTOSHOP</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 83%;"></span></div>
+                                            <label class="skills__name" for="PHOTOSHOP">PHOTOSHOP</label>
+                                            <progress id="PHOTOSHOP" class="skills__progress" max="100"
+                                                value="83"></progress>
                                             <div class="skills__procent">83%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">ILLUSTRATOR</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 92%;"></span></div>
+                                            <label class="skills__name" for="ILLUSTRATOR">ILLUSTRATOR</label>
+                                            <progress id="ILLUSTRATOR" class="skills__progress" max="100"
+                                                value="92"></progress>
                                             <div class="skills__procent">92%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">Sketch</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 93%;"></span></div>
+                                            <label class="skills__name" for="Sketch">Sketch</label>
+                                            <progress id="Sketch" class="skills__progress" max="100"
+                                                value="93"></progress>
                                             <div class="skills__procent">93%</div>
                                         </div>
                                     </div>
                                     <div class="profile__skills">
                                         <div class="skills">
-                                            <div class="skills__name">AFTER EFFECTS</div>
-                                            <div class="skills__progress"><span class="skills__progress--red"
-                                                    style="width: 98%;"></span></div>
+                                            <label class="skills__name" for="AFTER_EFFECTS">AFTER EFFECTS</label>
+                                            <progress id="AFTER_EFFECTS" class="skills__progress" max="100"
+                                                value="98"></progress>
                                             <div class="skills__procent">98%</div>
                                         </div>
                                     </div>
@@ -863,8 +859,7 @@
         </symbol>
     </svg>
 
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/libs/nav.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/libs/swiper.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/animate.js"></script>

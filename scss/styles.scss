@@ -319,25 +319,34 @@ body {
             width: 30%;
             margin-right: 10px;
         }
-        &__progress {
-            border-bottom: 1px solid $light-color;
-            width: 60%;
-            position: relative;
-        }
-        &__progress--red {
-            border-bottom: $border;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            
-        }
         &__procent {
             width: 10%;
             text-align: center;
         }
     }
 }
+
+progress.skills__progress {
+    display: block;
+    width: 50%;
+    height: 2px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  progress.skills__progress::-webkit-progress-bar {
+    background-color: beige;
+    border-radius: 6px;
+  }
+  
+  progress.skills__progress::-webkit-progress-value {
+    background-color: #FF5F29;
+    border-radius: 6px;
+  }
+  progress.skills__progress::-moz-progress-bar {
+    background-color: #FF5F29;
+    border-radius: 6px;
+  }
 
 #blog {
     .body__item{
