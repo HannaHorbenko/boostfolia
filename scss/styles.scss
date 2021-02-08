@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'nav';
 @import 'swiper.min.scss';
+@import 'animate';
 
 
 * {
@@ -138,6 +139,10 @@ body {
     }
 }
 
+// .hero {
+//     position: relative;
+// }
+
 .slide {
     position: relative;
     width: 100vw;
@@ -148,14 +153,14 @@ body {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .3em;
+    letter-spacing: .1em;
     &__img {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     &__content {
         color: $light-color;
@@ -165,6 +170,7 @@ body {
     &__title {
         font-size: 7.2rem;
         margin: 0;
+        position: relative;
        
     }
     &__suptitle {
@@ -183,11 +189,12 @@ body {
     }  
 }
 
-.hero-slider .swiper-button-prev::after,
-.hero-slider .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
     color: $light-color;
     font-size: 7.2rem;
 }
+
 
 #video {
     .video-wrap {
@@ -637,7 +644,6 @@ progress.skills__progress {
         }
     }
     .slide{
-        height: 300px;
         &__title {
             font-size: 5.6rem;
         }
@@ -700,10 +706,6 @@ progress.skills__progress {
         }
 
     }
-}
-
-.animate {
-    opacity: 0;
 }
 
 @media screen and (max-width: 320px) {

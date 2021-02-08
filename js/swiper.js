@@ -1,7 +1,5 @@
 'use strict';
 
-// $(document).ready(function () {
-
 let heroSlider = new Swiper('.hero-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -60,4 +58,3 @@ let portfolioSlider = new Swiper('.portfolio-slider', {
 
 });
 
-// });

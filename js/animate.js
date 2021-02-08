@@ -17,7 +17,6 @@ function checkItems() {
             let animateMode = item.getAttribute('data-animate'),
                 delay = item.getAttribute('data-delay'),
                 speed = item.getAttribute('data-speed');
-            item.classList.add('animate__animated', 'animate__zoomIn');
 
             if (animateMode) {
                 item.classList.add('animate__animated', 'animate__' + animateMode);
