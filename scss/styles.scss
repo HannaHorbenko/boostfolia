@@ -256,9 +256,9 @@ body {
     }
     &__img {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        // transform: translate(-50%, -50%);
         object-fit: contain;
     }
 }
@@ -662,7 +662,8 @@ progress.skills__progress {
     .gallery {
         display: block;
         &__item {
-            width: 100%;
+            width: 90%;
+            margin: 15px;
         }
     }
     .profile {
