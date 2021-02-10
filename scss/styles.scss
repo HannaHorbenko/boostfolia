@@ -4,13 +4,13 @@
 @import 'swiper.min.scss';
 @import 'animate';
 
-@font-face {
-    font-family: 'FontName';
-    src: local('FontName'), url('FontName.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    }
+// @font-face {
+//     font-display: swap;
+//     font-family: 'Roboto';
+//     src: local('Roboto'), url('FontName.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     }
 
 * {
     box-sizing: border-box;
@@ -192,7 +192,20 @@ body {
         right: 0;
         top: 0;
         background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0) 100%); 
-    }  
+    } 
+    .swiper-button-prev,
+    .swiper-button-next {
+        bottom: 10%;
+        
+    } 
+    .swiper-button-prev {
+        left: 45%;
+        
+    }
+    .swiper-button-next {
+        
+        right: 45%;
+    }
 }
 
 .swiper-button-prev::after,
@@ -245,7 +258,7 @@ body {
 }
 .gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     &__item {
         width: calc((100% / 3) - 15px * 2);
@@ -256,10 +269,10 @@ body {
     }
     &__img {
         position: absolute;
-        top: 0;
-        left: 0;
-        // transform: translate(-50%, -50%);
-        object-fit: contain;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
     }
 }
 
@@ -566,6 +579,19 @@ progress.skills__progress {
         fill: $light-color;
     }
 }
+@media screen and (max-width: 992px) {
+    #tariffs{
+        .up {
+            padding: 30px 0;
+        }
+        .content {
+            .btn {
+                margin: 20px 0;
+            }
+        
+    }
+}
+}
 
 
 @media screen and (max-width: 768px) {
@@ -642,8 +668,16 @@ progress.skills__progress {
     }
     .slide{
         &__title {
-            font-size: 5.6rem;
+            font-size: 3.6rem;
         }
+            .swiper-button-prev {
+                left: 30%;
+                
+            }
+            .swiper-button-next {
+                
+                right: 30%;
+            }
     }
     #video {
         .video-wrap {
@@ -660,7 +694,6 @@ progress.skills__progress {
     
     }
     .gallery {
-        display: block;
         &__item {
             width: 90%;
             margin: 15px;
