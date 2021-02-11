@@ -4,14 +4,6 @@
 @import 'swiper.min.scss';
 @import 'animate';
 
-// @font-face {
-//     font-display: swap;
-//     font-family: 'Roboto';
-//     src: local('Roboto'), url('FontName.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     }
-
 * {
     box-sizing: border-box;
 }
@@ -296,6 +288,7 @@ body {
     &__img {
         position: relative;
         overflow: hidden;
+        height: 200px;
         padding-top: 100%;
         border-radius: 50%;
         img {
@@ -373,7 +366,7 @@ progress.skills__progress {
     .body__img {
         position: relative;
         overflow: hidden;
-        padding-top: 80%;
+        height: 230px;
         img {
             position: absolute;
             left: 50%;
