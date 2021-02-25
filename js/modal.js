@@ -9,17 +9,22 @@
     btn.onclick = function () {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
+        document.body.classList.toggle('overflow');
     }
 
     modalClose.onclick = function () {
         modal.style.opacity = "0";
         modal.style.visibility = "hidden";
+        document.body.classList.remove('overflow');
+
     }
 
     modal.addEventListener("click", function (event) {
         if (event.target == modalBody) {
             modal.style.opacity = "0";
             modal.style.visibility = "hidden";
+            document.body.classList.remove('overflow');
+
         }
     })
 

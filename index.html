@@ -9,6 +9,8 @@
     <meta property="og:title" content="Boostfolia. We like to do creative works." />
     <meta property="twitter:title" content="Boostfolia. We like to do creative works." />
     <meta property="og:description" content="Boostfolia. We like to do creative works. We think creative be creative.">
+    <meta property="og:url" content="http://Boostfolia.html" />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="Logo.png" />
     <title>Boostfolia. We like to do creative works.</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__body">
                 <a href="#" class="header__logo"><img src="img/Logo.png" alt="Logo">BOOSTFOLIA</a>
@@ -476,41 +478,45 @@
                 </div>
 
                 <div class="body">
-                    <div class="body__item body__item--lg animate" data-animate="zoomIn" data-speed="faster">
+                    <div class="body__item body__item--lg animate" data-count="true" data-animate="zoomIn"
+                        data-speed="faster">
                         <div class="svg-wrap">
                             <svg class="" width="74" height="74">
                                 <use xlink:href="#monitor" />
                             </svg>
                         </div>
                         <h3 class="body__title">Create hortcodes</h3>
-                        <p class="body__text">46</p>
+                        <p class="body__text" id="value">46</p>
                     </div>
-                    <div class="body__item body__item--lg animate" data-animate="zoomIn" data-speed="faster">
+                    <div class="body__item body__item--lg animate" data-count="true" data-animate="zoomIn"
+                        data-speed="faster">
                         <div class="svg-wrap">
                             <svg class="" width="74" height="74">
                                 <use xlink:href="#settings" />
                             </svg>
                         </div>
                         <h3 class="body__title">Integrated Plugins</h3>
-                        <p class="body__text">128</p>
+                        <p class="body__text" id="value1">128</p>
                     </div>
-                    <div class="body__item body__item--lg animate" data-animate="zoomIn" data-speed="faster">
+                    <div class="body__item body__item--lg animate" data-count="true" data-animate="zoomIn"
+                        data-speed="faster">
                         <div class="svg-wrap">
                             <svg class="" width="74" height="74">
                                 <use xlink:href="#shopping" />
                             </svg>
                         </div>
                         <h3 class="body__title">Creative Products</h3>
-                        <p class="body__text">450</p>
+                        <p class="body__text" id="value2">450</p>
                     </div>
-                    <div class="body__item body__item--lg animate" data-animate="zoomIn" data-speed="faster">
+                    <div class="body__item body__item--lg animate" data-count="true" data-animate="zoomIn"
+                        data-speed="faster">
                         <div class="svg-wrap">
                             <svg class="" width="74" height="74">
                                 <use xlink:href="#medal" />
                             </svg>
                         </div>
                         <h3 class="body__title">Clients Worldwide</h3>
-                        <p class="body__text">100+</p>
+                        <p class="body__text" id="value3">100+</p>
                     </div>
                 </div>
             </div>
@@ -696,7 +702,7 @@
         </div>
 
         <div class="footer__content">
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="#header">
                 <img src="img/Logo.png" alt="Logo">
             </a>
             <div class="footer__title">Boostfolia</div>
@@ -830,6 +836,7 @@
         </symbol>
     </svg>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/libs/swiper.min.js"></script>
     <script src="js/swiper.js"></script>

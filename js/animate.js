@@ -18,6 +18,13 @@ function checkItems() {
                 delay = item.getAttribute('data-delay'),
                 speed = item.getAttribute('data-speed');
 
+
+            if (item.getAttribute('data-count') == "true") {
+                animateValue("value", 0, 46, 1200),
+                    animateValue("value1", 0, 128, 800),
+                    animateValue("value2", 0, 450, 100),
+                    animateValue("value3", 0, 100, 920)
+            }
             if (animateMode) {
                 item.classList.add('animate__animated', 'animate__' + animateMode);
 
@@ -33,7 +40,33 @@ function checkItems() {
         }
     })
 }
+function animateValue(id, start, end, duration) {
+    if (start === end) return;
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let obj = document.getElementById(id);
+    let timer = setInterval(function () {
+        current += increment;
+        if (id == 'value2') {
+            current++;
+
+        }
+        obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+        if (id == 'value3' && current > 99) {
+            current += '+';
+            obj.innerHTML = current;
+
+        }
+
+    }, stepTime);
+}
 checkItems();
 window.addEventListener('scroll', function (e) {
     checkItems();
 })
+

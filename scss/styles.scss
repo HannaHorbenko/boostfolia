@@ -25,6 +25,10 @@ body {
 
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1050px;
     padding: 0 15px;
@@ -426,11 +430,14 @@ progress.skills__progress {
     .body__item--lg:focus,
     .body__item--lg:active {
         border: $border;
+        transition: all .4s ease-in-out;
     }
     .body__item--lg:hover span,
     .body__item--lg:focus span,
     .body__item--lg:active span {
         color: $fill;
+        transition: all .4s ease-in-out;
+
     }
 }
 
@@ -451,7 +458,7 @@ progress.skills__progress {
     &__label {
         display: block;
         width: 100%;
-        margin-top: 25px;
+        padding-top: 25px;
     }
     &__label {
         text-transform: uppercase;
@@ -523,6 +530,7 @@ progress.skills__progress {
             background-color: transparent;
             outline: none;
             border: 1px solid transparent;
+            text-transform: uppercase;
         }
         .modal-btn:hover,
         .modal-btn:focus,
